@@ -11,8 +11,10 @@ Sample API key: **abc123**
 
 #### list groups
 
+GET:
+
 ```
-GET: https://v1.northtext.com/api/groups/list?token=abc123
+https://v1.northtext.com/api/groups/list?token=abc123
 ```
 
 #### send a single message
