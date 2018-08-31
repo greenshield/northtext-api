@@ -14,7 +14,7 @@ Sample API key: **abc123**
 GET:
 
 ```
-https://v1.northtext.com/group/list?token=abc123
+https://v1.northtext.com/group/list?token=abc123&groupid=6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
 ```
 
 #### send a single message
