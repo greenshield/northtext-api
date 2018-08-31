@@ -48,7 +48,7 @@ to | +16193210987
 https://v1.northtext.com/
 ```
 
-#### /message
+#### /send/message
 
 ``
 POST https://v1.northtext.com/send/message
@@ -64,7 +64,7 @@ to | **required** | string | +1234567890
 type | optional | string | marketing \| alert
 schedule | optional | timestamp | 2018-12-31 16:30:00 (4:30 PM on 12/31/2018)
 
-#### /messages
+#### /send/messages
 ``
 POST https://v1.northtext.com/send/messages
 ``
