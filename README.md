@@ -43,7 +43,7 @@ POST (alternative):
 https://v1.northtext.com/api/message/send?token=abc123
 ```
 
-field | valueschedule | optional | timestamp | 2018-12-31 04:00:00 PM
+field | value
 ---------- | ----------
 body | test message
 to | +16193210987
