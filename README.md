@@ -14,7 +14,7 @@ Sample API key: **abc123**
 GET:
 
 ```
-https://v1.northtext.com/api/groups/list?token=abc123
+https://v1.northtext.com/groups/list?token=abc123
 ```
 
 #### send a single message
@@ -22,7 +22,7 @@ https://v1.northtext.com/api/groups/list?token=abc123
 POST: 
 
 ```
-https://v1.northtext.com/api/message/send
+https://v1.northtext.com/message/send
 ```
 
 field | value
@@ -34,7 +34,7 @@ to | +16193210987
 POST (alternative):
 
 ```
-https://v1.northtext.com/api/message/send?token=abc123
+https://v1.northtext.com/message/send?token=abc123
 ```
 
 field | value
@@ -45,13 +45,13 @@ to | +16193210987
 # API endpoints
 ##### The base URL for all endpoints is
 ```
-https://v1.northtext.com/api
+https://v1.northtext.com/
 ```
 
 #### /message
 
 ``
-https://v1.northtext.com/api/message
+https://v1.northtext.com/message
 ``
 
 Send a single message to one recipient
@@ -66,7 +66,7 @@ schedule | optional | timestamp | 2018-12-31 16:30:00 (4:30 PM on 12/31/2018)
 
 #### /messages
 ``
-https://v1.northtext.com/api/message
+https://v1.northtext.com/messages
 ``
 
 Send a message to a group
@@ -78,3 +78,15 @@ groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
 schedule | optional | timestamp | 2018-12-31 16:30:00 (4:30 PM on 12/31/2018)
 
 Each group has a unique ID that can be found on the "Groups" tab of your "Contacts" menu under the "API ID" field.
+
+#### /groups
+``
+https://v1.northtext.com/group
+``
+
+Add a number to a group
+
+field |  | type | format
+---------- | ---------- | ---------- | ----------
+phone | **required** | string | +1234567890
+groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
