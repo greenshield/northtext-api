@@ -19,12 +19,6 @@ https://v1.northtext.com/api/groups/list?token=abc123
 
 #### send a single message
 
-GET:
- 
-```
-https://v1.northtext.com/api/message/send?token=abc123&body=testing&to=+16193219876
-```
-
 POST: 
 
 ```
