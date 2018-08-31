@@ -1,6 +1,6 @@
 # NorthText API
 
-### Authentication
+## Authentication
 
 API key
 
@@ -8,7 +8,7 @@ API key
   - API key must be passed with each request as a POST variable (form field) or query string parameter (URL variable)
   - Variable name must always be **token**
 
-### Examples
+## Examples
 Sample API key: **abc123**
 
 #### list groups
@@ -44,7 +44,7 @@ field | value
 body | test message
 to | +16193210987
 
-# API endpoints
+## API endpoints
 ##### The base URL for all endpoints is
 ```
 https://v1.northtext.com/
