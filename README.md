@@ -62,7 +62,7 @@ https://v1.northtext.com/api/message
 
 Send a single message to one recipient
 
-field | o | type | format
+field |  | type | format
 ---------- | ---------- | ---------- | ----------
 body | **required** | string | 240 characters
 to | **required** | string | +1234567890
@@ -75,7 +75,7 @@ https://v1.northtext.com/api/message
 
 Send a message to a group
 
-field | o | type | format
+field |  | type | format
 ---------- | ---------- | ---------- | ----------
 body | **required** | string | 240 characters
 groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
