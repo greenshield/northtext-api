@@ -51,7 +51,7 @@ https://v1.northtext.com/
 #### /message
 
 ``
-https://v1.northtext.com/message
+POST https://v1.northtext.com/send/message
 ``
 
 Send a single message to one recipient
@@ -66,7 +66,7 @@ schedule | optional | timestamp | 2018-12-31 16:30:00 (4:30 PM on 12/31/2018)
 
 #### /messages
 ``
-https://v1.northtext.com/messages
+POST https://v1.northtext.com/send/messages
 ``
 
 Send a message to a group
@@ -77,11 +77,11 @@ body | **required** | string | 240 characters
 groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
 schedule | optional | timestamp | 2018-12-31 16:30:00 (4:30 PM on 12/31/2018)
 
-Each group has a unique ID that can be found on the "Groups" tab of your "Contacts" menu under the "API ID" field.
+Each group has a unique API ID that can be found by visiting the "Contacts" link on the sidebar menu of your dashboard and then clicking on the "Groups" tab.
 
 #### /group/add
 ``
-https://v1.northtext.com/group/add
+POST https://v1.northtext.com/group/add
 ``
 
 Add a number to a group
@@ -93,7 +93,7 @@ groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
 
 #### /group/remove
 ``
-https://v1.northtext.com/group/remove
+POST https://v1.northtext.com/group/remove
 ``
 
 Remove a number from a group
@@ -105,7 +105,7 @@ groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
 
 #### /group/create
 ``
-https://v1.northtext.com/group/create
+POST https://v1.northtext.com/group/create
 ``
 
 Create a new group
@@ -114,3 +114,16 @@ field |  | type | format
 ---------- | ---------- | ---------- | ----------
 name | **required** | string | My New Group
 accountid | **required** | string | GE4F558F-4CC8-3A5E-B03D15ED243FAB3C
+
+Each of your sub-accounts has a unique API ID that can be found by visiting "Settings" link on the sidebar menu on your dashboard and then clicking the "Sub-accounts" link.
+
+#### /group/delete
+``
+POST https://v1.northtext.com/group/delete
+``
+
+Delete a group
+
+field |  | type | format
+---------- | ---------- | ---------- | ----------
+groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
