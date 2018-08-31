@@ -1,6 +1,6 @@
 # NorthText API
 
-## Authentication
+### Authentication
 
 API key
 
