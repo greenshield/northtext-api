@@ -79,9 +79,9 @@ schedule | optional | timestamp | 2018-12-31 16:30:00 (4:30 PM on 12/31/2018)
 
 Each group has a unique ID that can be found on the "Groups" tab of your "Contacts" menu under the "API ID" field.
 
-#### /groups
+#### /group/add
 ``
-https://v1.northtext.com/group
+https://v1.northtext.com/group/add
 ``
 
 Add a number to a group
@@ -90,3 +90,27 @@ field |  | type | format
 ---------- | ---------- | ---------- | ----------
 phone | **required** | string | +1234567890
 groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
+
+#### /group/remove
+``
+https://v1.northtext.com/group/remove
+``
+
+Remove a number from a group
+
+field |  | type | format
+---------- | ---------- | ---------- | ----------
+phone | **required** | string | +1234567890
+groupid | **required** | string | 6D4F558F-3CC8-4A5E-B03D15ED243FAB2A
+
+#### /group/create
+``
+https://v1.northtext.com/group/create
+``
+
+Create a new group
+
+field |  | type | format
+---------- | ---------- | ---------- | ----------
+name | **required** | string | My New Group
+accountid | **required** | string | GE4F558F-4CC8-3A5E-B03D15ED243FAB3C
