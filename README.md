@@ -1,9 +1,11 @@
 # NorthText API
 
+## Authentication
+
 API key
 
   - API key is found under **"Settings"** on the sidebar menu of your dashboard
-  - API key must be passed as a POST variable (form field) or query string parameter (URL variable) with each request
+  - API key must be passed with each request as a POST variable (form field) or query string parameter (URL variable)
   - Variable name must always be **token**
 
 ### Examples
